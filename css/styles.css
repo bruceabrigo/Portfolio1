@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li, a {
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li:hover {
+  color: #445626;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 25px ;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+h1 {
+  font-size: 30px;
+  cursor: pointer;
+}
+.abrigo {
+  color: #445626;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+.navbar li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  background: linear-gradient(-45deg, #7BD5F5, #787FF6, #4ADEDE, #1CA7EC, #1F2F98);
+  background-size: 400% 400%;
+  width: 100%;
+  animation: animate 10s ease infinite;
+}
+
+.greeting {
+  position: relative;
+  margin: 35vh;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+/* Skills Section */
+
+.skills {
+  min-height: 90vh;
+  margin: 55px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.skillsTitle {
+  color: #1F2F98;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+.skillsCard {
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 60vh;
+  width: 75%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.frontEndTitle {
+  padding: 25px;
+}
+.skillsImgs {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px
+}
+
+.skillsImgs li {
+  display: inline-block;
+
+}
+.html-icon, .css-icon, .js-icon{
+  height: 6vh;
+}
+
+.backEndTitle {
+  padding-bottom: 25px;
+}
+
+.mongo-icon, .sql-icon {
+  height: 6vh;
+}
+
+.techTitle {
+  padding-bottom: 25px;
+}
+
+.vscode-icon, .postman-icon, .github-icon, .figma-icon {
+  height: 6vh;
+}
+
+/* Projects Section */
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  background: linear-gradient(-45deg, #0B0742, #120C6F, #5372EB, #FF9190, #FDC094);
+  background-size: 400% 400%;
+  width: 100%;
+  animation: animate 20S ease infinite;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.proj-title-area {
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 55px;
+}
+.proj-description {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.90);
+}
+.ratch-me-if-you-can {
+  padding: 15px;
+  margin-left: 25vh;
+  margin-right: 25vh;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 45vh;
+  width: 500px;
+}
+@keyframes animate {
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0 50%;
+  }
+}
+
